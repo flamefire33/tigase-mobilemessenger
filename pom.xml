@@ -85,31 +85,29 @@
 	</build>
 	<repositories>
 		<repository>
-			<snapshots />
 			<id>tigase</id>
 			<name>Tigase repository</name>
-			<url>http://maven.tigase.org</url>
+			<url>http://maven-repo.tigase.org/repository/release</url>
 		</repository>
 		<repository>
 			<id>tigase-snapshot</id>
 			<name>Tigase repository</name>
-			<url>http://build.xmpp-test.net/maven/</url>
+			<url>http://maven-repo.tigase.org/repository/snapshot</url>
 			<snapshots>
 				<enabled>true</enabled>
 			</snapshots>
 		</repository>
 	</repositories>
-
 	<distributionManagement>
 		<repository>
 			<id>tigase</id>
 			<name>Tigase repository</name>
-			<url>scp://maven.tigase.org:/home/webapp/maven-repository</url>
+			<url>http://maven-repo.tigase.org/repository/release</url>
 		</repository>
 		<snapshotRepository>
 			<id>tigase-snapshot</id>
 			<name>Tigase snapshot repository</name>
-			<url>scp://build.xmpp-test.net:/home/maven/repository</url>
+			<url>http://maven-repo.tigase.org/repository/snapshot</url>
 		</snapshotRepository>
-	</distributionManagement>  
+	</distributionManagement>
 </project>
